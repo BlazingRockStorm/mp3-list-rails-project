@@ -36,7 +36,7 @@
 <ul>
 <% @image.image_comment.each do |image_comment|%>
 <li><%= image_comment.comment %>
-(<i><%= image_comment.user_id %></i>)</li><!--replace user_id by email-->
+(<i><%= image_comment.user.email %></i>)</li><!--replace user_id by email-->
 <% end %>
 </ul>
 
